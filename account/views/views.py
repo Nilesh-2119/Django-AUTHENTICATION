@@ -3,5 +3,5 @@ from ..models import *
 from ..serializers.serializers import *
 
 class CustomUserView(CreateAPIView):
-    queryset = CustomUserModel
+    queryset = CustomUserModel.objects.all()
     serializer_class = CustomUserSerializers
